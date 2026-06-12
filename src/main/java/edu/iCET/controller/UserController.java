@@ -18,6 +18,8 @@ public class UserController {
     @GetMapping("/{username}")
     public UserDTO getUser(@PathVariable String username){
 
+//        System.out.println("Username received: " + username);
+
         return userService.getUser(username);
     }
 
