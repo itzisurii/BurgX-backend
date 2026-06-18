@@ -22,9 +22,15 @@ public class ProductController {
         return "Load Product Controller...";
     }
 
+    @GetMapping("/getAll")
     public List<ProductDTO>getAllProducts(){
 
         return productService.getAllProducts();
+    }
+
+    public ProductDTO getProduct(String name){
+
+        return productService.getProduct(name);
     }
 
 }
