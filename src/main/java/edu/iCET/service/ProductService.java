@@ -11,4 +11,8 @@ public class ProductService {
     public List<ProductDTO> getAllProducts() {
         return null;
     }
+
+    public ProductDTO getProduct(String name) {
+        return null;
+    }
 }
