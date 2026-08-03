@@ -28,6 +28,7 @@ public class ProductController {
         return productService.getAllProducts();
     }
 
+    @GetMapping("/getProduct")
     public ProductDTO getProduct(String name){
 
         return productService.getProduct(name);
