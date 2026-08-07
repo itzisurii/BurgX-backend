@@ -19,10 +19,12 @@ public class OrderController {
         return "Load Order Controller...";
     }
 
+    @GetMapping("/lastId")
     public int getLastOrderId(){
 
         return orderService.getLastOrderId();
     }
+
 
 
 }
